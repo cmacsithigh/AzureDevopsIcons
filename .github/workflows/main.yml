@@ -29,9 +29,10 @@ jobs:
         with:
           body: |
             **Note:** This release is not signed and will not be loaded by the browser directly.
-            You are best advised to download it from the appropriate browser's extension gallery:
+            The extension is currently available through the Firefox Add-ons gallery:
             - [Firefox addons](https://addons.mozilla.org/en-GB/firefox/search/?q=Azure%20DevOps%20icon&type=extension)
-            - [Chrome/Edge addons](https://chrome.google.com/webstore/detail/azure-devops-icons/pgbejjjgidgpciebpdiajlljpipdpcfe)
+
+            The Chrome/Edge extension was removed from the Chrome Web Store because of a claim by Microsoft and thus has to be installed manually.
           name: ${{ steps.build.outputs.PKG_VERSION }}
           tag_name: ${{ steps.build.outputs.PKG_VERSION }}
           files: |
